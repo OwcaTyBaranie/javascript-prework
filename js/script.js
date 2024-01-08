@@ -1,4 +1,9 @@
+var buttonTest;
 var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+buttonTest = document.getElementById('button-test');
+buttonPaper = document.getElementById('button-paper');
+buttonRock = document.getElementById('button-rock');
+buttonScissors = document.getElementById('button-scissors');
 
 /**
  * Describe this function...
@@ -20,9 +25,6 @@ function buttonClicked(argButtonName) {
     }
   }
   
-  /**
-   * Describe this function...
-   */
   function displayResult(argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
@@ -46,6 +48,9 @@ function buttonClicked(argButtonName) {
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 }
+buttonTest.addEventListener('click', function(){
+    buttonClicked('Test button')
+});
 buttonTest = document.getElementById('button-test');
 buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock = document.getElementById('button-rock');
@@ -56,6 +61,4 @@ buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber, x;
 
-/**
- * Describe this function...
- */
+
