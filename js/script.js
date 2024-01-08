@@ -48,11 +48,7 @@ function buttonClicked(argButtonName) {
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 }
-buttonTest.addEventListener('click', function(){
-    buttonClicked('Test button')
-});
-buttonTest = document.getElementById('button-test');
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
+
 buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper = document.getElementById('button-paper');
