@@ -1,4 +1,4 @@
-var playerScore = 0;
+let playerScore = 0;
 var computerScore = 0;
 
 var buttonRock = document.getElementById('button-rock');
