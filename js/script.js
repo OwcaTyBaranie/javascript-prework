@@ -44,7 +44,7 @@ function buttonClicked(argButtonName) {
     updateScore();
   }
   
-  var playerMove = argButtonName;
+  const playerMove = argButtonName;
   console.log('ruch gracza to: ' + playerMove);
   
   var randomNumber = Math.floor(Math.random() * 3 + 1);
