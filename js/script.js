@@ -1,5 +1,5 @@
 let playerScore = 0;
-var computerScore = 0;
+let computerScore = 0;
 
 var buttonRock = document.getElementById('button-rock');
 var buttonPaper = document.getElementById('button-paper');
